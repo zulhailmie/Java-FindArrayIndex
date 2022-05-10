@@ -13,15 +13,15 @@ public class FindArrayIndex
         System.out.println("Array position of value " + i + " is #" + getIndex(i));
     }
     
-    public static int getIndex(int i)
+    public static int getIndex(int j)
     {
         Integer[] arrayWrapper = new Integer[array.length];
-        for (int j = 0; j < array.length; j++)
+        for (int n = 0; n < array.length; n++)
         {
-            arrayWrapper[j] = array[j];
-            System.out.println("#" + j + ": " + array[j]);
+            arrayWrapper[n] = array[n];
+            System.out.println("#" + n + ": " + array[n]);
         }
-        int index = Arrays.asList(arrayWrapper).indexOf(i);
+        int index = Arrays.asList(arrayWrapper).indexOf(j);
         return index;
     }
 }
